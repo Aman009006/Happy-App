@@ -1,0 +1,35 @@
+nav {
+  padding: 25px;
+  background: #ffffff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+}
+.nav__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 590px;
+  width: 100%;
+}
+.nav__li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #666666;
+}
+
+.nav__btn {
+  width: 172px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

@@ -1,0 +1,46 @@
+future {
+  height: 637px;
+  background: white;
+}
+.future__btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.future__content {
+  padding-top: 138px;
+  display: flex;
+}
+.future__left {
+  width: 400px;
+}
+.future__title {
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 60px;
+  color: #222222;
+  margin-top: 24px;
+}
+.future__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222222;
+  margin-top: 17px;
+}
+.future__btns{
+    margin-top: 20px;
+}
+.future__btn{
+    width: 145px;
+}
+.future__btn:first-child{
+    margin-right: 10px;
+}
+.future__right-img{
+    width: 375px;
+}

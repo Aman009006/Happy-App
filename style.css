@@ -1,0 +1,31 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 75px;
+}
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+.btn {
+  background: #222222;
+  border-radius: 4px;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
