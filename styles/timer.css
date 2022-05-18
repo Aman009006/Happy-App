@@ -1,6 +1,7 @@
 .timer {
   background-image: url(../images/bg_for_time.png);
   height: 436px;
+  margin-top: 90px;
 }
 .timer__title {
   text-align: center;

@@ -1,0 +1,84 @@
+.pricing {
+  background: white;
+}
+.pricing__content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.pricing__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.pricing__descr {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #222222;
+}
+.pricing__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #666666;
+  width: 568px;
+  margin-top: 14px;
+}
+.pricing__card {
+  background: #f2f2f2;
+  border-radius: 20px;
+  width: 379px;
+  height: 338px;
+  text-align: center;
+  padding: 50px;
+}
+.pricing__cards{
+  margin-top: 41px;
+  display: flex;
+ flex-wrap: wrap;
+  width: 1170px;
+}
+.name__card {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #0278ed;
+}
+
+.orange__bg{
+  background: #FF5437 !important;
+}
+.yellow__bg{
+  background: #FF9209 !important;
+}
+.price__card {
+  font-weight: 400;
+  font-size: 108px;
+  line-height: 124px;
+  text-align: center;
+  letter-spacing: 8px;
+  color: #0278ed;
+}
+.time__card {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 25px;
+}
+.buy__btn {
+  background: #0278ed;
+  border-radius: 4px;
+  width: 129px;
+  margin-top: 20px;
+}

@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./styles/analyzed.css" />
     <link rel="stylesheet" href="./styles/tech.css" />
-    <link rel="stylesheet" href="./styles/mods.css">
+    <link rel="stylesheet" href="./styles/mods.css" />
+    <link rel="stylesheet" href="./styles/pricing.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -29,7 +30,9 @@
           <li class="nav__li">Pricing</li>
           <li class="nav__li">Testimonials</li>
           <li class="nav__li">FAQ</li>
-          <button class="nav__li nav__btn btn">Get this app</button>
+          <li class="nav__li">
+            <button class="nav__li nav__btn btn">Get this app</button>
+          </li>
         </ul>
       </div>
     </nav>
@@ -237,7 +240,7 @@
 
     <section class="technology speed">
       <div class="container speed__technology">
-        <div class="technology__right">
+        <div class="technology__right speed__right">
           <img class="future__right-img" src="./images/tech2.png" alt="" />
         </div>
         <div class="technology__left">
@@ -257,11 +260,65 @@
     </section>
 
     <section class="mods">
-        <div class="mods__content container">
-
+      <div class="mods__content container">
+        <p class="mods__title">Dark mode</p>
+        <p class="mods__subtitle">
+          Also available in <span class="mods__span">dark</span>.
+        </p>
+        <p class="mods__descr">
+          Don't get blinded when using the H(app)y app at night, just turn off
+          the lights. Lorem ipsum dolor sit amet.
+        </p>
+        <div class="mode__img">
+          <img
+            class="mode-img"
+            src="./images/feature_cards/mode-img.png"
+            alt=""
+          />
         </div>
+        <div class="mode__btns">
+          <button class="mode__btn">
+            <img src="./images/feature_cards/logo1Mods.png" alt="" />
+            <p>Light Mode</p>
+          </button>
+          <button class="mode__btn">
+            <img src="./images/feature_cards/logo1Mods.png" alt="" />
+            <p>Light Mode</p>
+          </button>
+        </div>
+      </div>
     </section>
 
-
+    <section class="pricing">
+      <div class="pricing__content container">
+        <p class="pricing__title">Pricing</p>
+        <p class="pricing__descr">A plan for every need.</p>
+        <p class="pricing__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          scelerisque aliquam odio et faucibus.
+        </p>
+           <div class="pricing__cards">
+            <div class="pricing__card">
+              <p class="name__card">Standard</p>
+              <p class="price__card">$9</p>
+              <p class="time__card">Monthly</p>
+              <button class="btn buy__btn">BUY NOW</button>
+          </div>
+          <div class="pricing__card">
+            <p class="name__card orange">Standard</p>
+            <p class="price__card orange">$9</p>
+            <p class="time__card">Monthly</p>
+            <button class="btn buy__btn orange__bg">BUY NOW</button>
+        </div>
+        <div class="pricing__card">
+          <p class="name__card yellow">Standard</p>
+          <p class="price__card yellow">$9</p>
+          <p class="time__card ">Monthly</p>
+          <button class="btn buy__btn yellow__bg">BUY NOW</button>
+      </div>
+           </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

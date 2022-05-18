@@ -1,5 +1,5 @@
 .technology {
-  height: 645px;
+  /* height: 645px; */
   background: white;
 }
 .content__technology {
@@ -33,4 +33,10 @@ color: #666666;
 .speed__technology{
     display: flex;
     padding-top: 101px;
+}
+.technology__right{
+ height: 550px;
+}
+.speed__right{
+  height: 544px;
 }
