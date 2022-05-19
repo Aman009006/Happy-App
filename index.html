@@ -27,9 +27,10 @@
     <title>Happy app</title>
   </head>
   <body>
+
     <nav>
       <div class="container nav__content">
-        <img src="./images/logo.png" alt="" class="logo" />
+        <img src="./images/logo.svg" alt="" class="logo" />
         <ul class="nav__ul">
           <li class="nav__li">Features</li>
           <li class="nav__li">Pricing</li>
@@ -68,7 +69,7 @@
     <section class="future">
       <div class="container future__content">
         <div class="future__left">
-          <img src="./images/future__logo.png" alt="" />
+          <img src="./images/future__logo.svg" alt="" />
           <p class="future__title">The future of digital photos.</p>
           <p class="future__descr">
             The H(app)y app is the latest & greatest in phone photography. It's
@@ -366,7 +367,7 @@
         <p class="download__title">Download</p>
         <p class="download__descr">It's available right now!</p>
         <p class="download__subtitle">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
-        <img src="./images/downlogo.png" alt="" class="download__appStor">
+        <img src="./images/downlogo.svg" alt="" class="download__appStor">
       </div>
     </section>
 
@@ -395,23 +396,23 @@
       </div>
     </section>
 
-    <section class="footer">
+    <footer class="footer">
       <div class="footer__content container">
-        <img src="./images/logohorizon.png" alt="" class="logo__horizon">
+        <img src="./images/logohorizon.svg" alt="" class="logo__horizon">
         <div class="footer__links">
           <a href="" class="footer__link"><img src="./images/tw.svg" alt=""></a>
           <a href="" class="footer__link"><img src="./images/in.svg" alt=""></a>
           <a href="" class="footer__link"><img src="./images/fb.svg" alt=""></a>
         </div>
       </div>
-    </section>
+    </footer>
 
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close"></span>
         <p class="modal__title">Leave a request for the purchase of goods</p>
-        <input type="text" placeholder="Email" class="modal__input-mail">
-        <input type="password" placeholder="Password" class="modal__input-password">
+        <input id="email" type="text" placeholder="Email" class="modal__input-mail">
+        <input id="pass" type="password" placeholder="Password" class="modal__input-password">
         <p class="modal__text-plan">Your plan?</p>
         <label  onclick="check()" id="standert"  class="btn__card-modal  radio__modal_pricer b">
           <input id="standert" class="modal__radio-btn pricer__input b" type="radio" name="Priceing" value=""><span id="bspan" class="modal__span span__input ">Standart</span><br>
@@ -423,22 +424,25 @@
           <input id="lifetime" class="modal__radio-btn  pricer__input y" type="radio" name="Priceing" value=""><span id="yspan" class="modal__span span__input yellow">Lifetime</span><br>
         </label >
         <p class="modal__text-app">How did you know about our app?</p>
-        <div class="modal__radio-up">
+        <label class="modal__radio-up">
           <input class="modal__radio-btn" type="radio" name="Facebook" value=""><span class="modal__span facebook">Facebook</span>
-        </div>
-        <div class="modal__radio-up">
+        </label>
+        <label class="modal__radio-up">
           <input class="modal__radio-btn" type="radio" name="Facebook" value=""><span class="modal__span instagrem">Instagram</span><br>
-        </div>
-        <div class="modal__radio-up">
+        </label>
+        <label class="modal__radio-up">
           <input class="modal__radio-btn" type="radio" name="Facebook" value=""><span class="modal__span youtube">Youtube</span><br>
-        </div>
-        <div class="modal__radio-up">
+        </label>
+        <label class="modal__radio-up">
           <input class="modal__radio-btn" type="radio" name="Facebook" value=""><span class="modal__span other">Other</span><br>
-        </div>
+        </label>
         <button onclick="loading()" id="send__modal" class="btn modal__btn">send</button>
         <div class="modal__send_data">
           <div class="loader"> <img src="./images/clock.svg" alt=""></div>
           <p class="text__loading">Loading...</p>
+        </div>
+        <div id="error__value" class="error__value">
+          <p class="error__text">Заполните полностью</p>
         </div>
       </div>
     

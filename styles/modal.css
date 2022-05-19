@@ -203,3 +203,11 @@ input[type="radio"]:focus {
   .visable{
       display: flex;
   }
+  .error__text{
+    text-align: center;
+    color: red;
+    margin-top: 15px;
+  }
+  #error__value{
+    display: none;
+  }

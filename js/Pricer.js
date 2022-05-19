@@ -4,7 +4,6 @@ const price = async () => {
     document.getElementById("standart").innerHTML = obj.standart
     document.getElementById("premium").innerHTML = obj.premium
     document.getElementById("lifetime").innerHTML = obj.lifetime
-    console.log(obj.standart);
    
   };
   price();

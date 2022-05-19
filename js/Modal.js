@@ -54,9 +54,32 @@ function check() {
     ospan.style.color = "#FF5437";
   }
 }
-function loading(){
-let loadingModal = document.querySelector(".modal__send_data")
-loadingModal.classList.add('visable');
+function closeModal(){
+  modal.style.display = "none"
 }
 
-
+function loading() {
+  let firstRadio = document.querySelector(
+    '.radio__modal_pricer input[type="radio"]:checked'
+  );
+  let secondRadio = document.querySelector(
+    '.modal__radio-up input[type="radio"]:checked'
+  );
+  let mailValue = document.getElementById("email").value;
+  let passValue = document.getElementById("pass").value;
+  let errorText = document.getElementById("error__value");
+  console.log(secondRadio);
+  if (
+    firstRadio !== null &&
+    secondRadio !== null &&
+    mailValue > 3 &&
+    passValue > 3
+  ) {
+    let loadingModal = document.querySelector(".modal__send_data");
+    loadingModal.classList.add("visable");
+    errorText.style.display = "none";
+    setInterval(closeModal, 3000);
+  } else {
+    errorText.style.display = "block";
+  }
+}
