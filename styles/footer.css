@@ -1,0 +1,14 @@
+.footer{
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+.footer__content{
+    text-align: center;
+}
+.footer__links{
+    width: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 27px;
+}

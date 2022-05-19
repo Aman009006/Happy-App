@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="./styles/tech.css" />
     <link rel="stylesheet" href="./styles/mods.css" />
     <link rel="stylesheet" href="./styles/pricing.css" />
+    <link rel="stylesheet" href="./styles/testimonials..css">
+    <link rel="stylesheet" href="./styles/download.css">
+    <link rel="stylesheet" href="./styles/faq.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -37,18 +42,25 @@
       </div>
     </nav>
 
-    <section class="timer">
+    <section id="timer" class="timer">
       <div class="container timer__content">
         <h2 class="timer__title">big sale on lifetime plan</h2>
         <h3 class="timer__subtitle">there is very little left</h3>
         <div class="timer__numbers">
-          <p>13 | 03 | 26 | 59</p>
-        </div>
-        <div class="data__name">
+          <div class="data__number">
+            <span id="day"></span>
           <p class="data__name-time">days</p>
+          </div> | <div class="data__number">
+            <span id="hours"></span>
           <p class="data__name-time">hours</p>
+          </div>  | <div class="data__number">
+            <span id="min"></span>
           <p class="data__name-time">minutes</p>
+          </div>  | <div class="data__number">
+            <span id="sec"></span>
           <p class="data__name-time">seconds</p>
+          </div>  
+          
         </div>
       </div>
     </section>
@@ -63,7 +75,7 @@
             available in the App Store right now. Go check it out!
           </p>
           <div class="future__btns">
-            <button class="btn future__btn">BUY NOW</button>
+            <button onclick="Modal()" id="myBtn" class="btn future__btn">BUY NOW</button>
             <button class="btn future__btn">READ MORE</button>
           </div>
         </div>
@@ -278,12 +290,12 @@
         </div>
         <div class="mode__btns">
           <button class="mode__btn">
-            <img src="./images/feature_cards/logo1Mods.png" alt="" />
+            <img src="./images/light.svg" alt="" />
             <p>Light Mode</p>
           </button>
           <button class="mode__btn">
-            <img src="./images/feature_cards/logo1Mods.png" alt="" />
-            <p>Light Mode</p>
+            <img src="./images/dark.svg" alt="" />
+            <p>Dark mode</p>
           </button>
         </div>
       </div>
@@ -300,25 +312,140 @@
            <div class="pricing__cards">
             <div class="pricing__card">
               <p class="name__card">Standard</p>
-              <p class="price__card">$9</p>
+              <p id="standart" class="price__card">$</p>
               <p class="time__card">Monthly</p>
-              <button class="btn buy__btn">BUY NOW</button>
+              <button onclick="Modal()" class="btn buy__btn">BUY NOW</button>
           </div>
           <div class="pricing__card">
-            <p class="name__card orange">Standard</p>
-            <p class="price__card orange">$9</p>
+            <p class="name__card orange">Premium</p>
+            <p id="premium" class="price__card orange">$9</p>
             <p class="time__card">Monthly</p>
-            <button class="btn buy__btn orange__bg">BUY NOW</button>
+            <button onclick="Modal()" class="btn buy__btn orange__bg">BUY NOW</button>
         </div>
         <div class="pricing__card">
-          <p class="name__card yellow">Standard</p>
-          <p class="price__card yellow">$9</p>
+          <p class="name__card yellow">Lifetime</p>
+          <p id="lifetime" class="price__card yellow">$9</p>
           <p class="time__card ">Monthly</p>
-          <button class="btn buy__btn yellow__bg">BUY NOW</button>
+          <button onclick="Modal()" class="btn buy__btn yellow__bg">BUY NOW</button>
       </div>
            </div>
         </div>
       </div>
     </section>
+
+    <section class="testimonials">
+      <div class="testimonials__content container">
+        <p class="testimonials__title">Testimonials</p>
+        <p class="testimonials__descr">Don't take our word for it.</p>
+        <p class="testimonials__subtitle">
+          See what our customers are saying.
+        </p>
+           <div class="testimonials__cards">
+              <div class="testimonials__card">
+                <p class="name__testimonials">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus.</p>
+                <p class="descr__testimonials">Pam Beesly</p>
+                <p class="subtitle__testimonials">Pam Beesly</p>
+              </div>
+              <div class="testimonials__card">
+                <p class="name__testimonials">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus.</p>
+                <p class="descr__testimonials">Pam Beesly</p>
+                <p class="subtitle__testimonials">Pam Beesly</p>
+              </div>
+              <div class="testimonials__card">
+                <p class="name__testimonials">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus.</p>
+                <p class="descr__testimonials">Pam Beesly</p>
+                <p class="subtitle__testimonials">Pam Beesly</p>
+              </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="download">
+      <div class="download__content conainer">
+        <p class="download__title">Download</p>
+        <p class="download__descr">It's available right now!</p>
+        <p class="download__subtitle">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
+        <img src="./images/downlogo.png" alt="" class="download__appStor">
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="faq__content container">
+        <p class="faq__title">FAQ</p>
+        <p class="faq__descr">Some questions & some answers</p>
+        <div class="faq__texts">
+            <div class="faq__text">
+            <p class="faq__text-title">What devices does H(app)y support?</p>
+            <p class="faq__text-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</p>
+            </div>
+            <div class="faq__text">
+              <p class="faq__text-title">How many megapixels does H(app)y support?</p>
+              <p class="faq__text-descr">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+              </div>
+              <div class="faq__text">
+                <p class="faq__text-title">Will my photos magically be more beautiful if I use this app?</p>
+                <p class="faq__text-descr">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit.</p>
+                </div>
+                <div class="faq__text">
+                  <p class="faq__text-title">How many photos can I store in H(app)y?</p>
+                  <p class="faq__text-descr">Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Etiam ut orci varius, faucibus libero ac, cursus quam. Aenean porta neque eget consequat fringilla.</p>
+                  </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer__content container">
+        <img src="./images/logohorizon.png" alt="" class="logo__horizon">
+        <div class="footer__links">
+          <a href="" class="footer__link"><img src="./images/tw.svg" alt=""></a>
+          <a href="" class="footer__link"><img src="./images/in.svg" alt=""></a>
+          <a href="" class="footer__link"><img src="./images/fb.svg" alt=""></a>
+        </div>
+      </div>
+    </section>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close"></span>
+        <p class="modal__title">Leave a request for the purchase of goods</p>
+        <input type="text" placeholder="Email" class="modal__input-mail">
+        <input type="password" placeholder="Password" class="modal__input-password">
+        <p class="modal__text-plan">Your plan?</p>
+        <label  onclick="check()" id="standert"  class="btn__card-modal  radio__modal_pricer b">
+          <input id="standert" class="modal__radio-btn pricer__input b" type="radio" name="Priceing" value=""><span id="bspan" class="modal__span span__input ">Standart</span><br>
+        </label >
+        <label onclick="check()" id="premium"  class="btn__card-modal orange orange__border radio__modal_pricer o">
+          <input id="premium" class="modal__radio-btn pricer__input o" type="radio" name="Priceing" value=""><span id="ospan" class="modal__span span__input orange">Premium</span><br>
+        </label >
+        <label onclick="check()" id="lifetime"  class="btn__card-modal yellow yellow__border radio__modal_pricer y">
+          <input id="lifetime" class="modal__radio-btn  pricer__input y" type="radio" name="Priceing" value=""><span id="yspan" class="modal__span span__input yellow">Lifetime</span><br>
+        </label >
+        <p class="modal__text-app">How did you know about our app?</p>
+        <div class="modal__radio-up">
+          <input class="modal__radio-btn" type="radio" name="Facebook" value=""><span class="modal__span facebook">Facebook</span>
+        </div>
+        <div class="modal__radio-up">
+          <input class="modal__radio-btn" type="radio" name="Facebook" value=""><span class="modal__span instagrem">Instagram</span><br>
+        </div>
+        <div class="modal__radio-up">
+          <input class="modal__radio-btn" type="radio" name="Facebook" value=""><span class="modal__span youtube">Youtube</span><br>
+        </div>
+        <div class="modal__radio-up">
+          <input class="modal__radio-btn" type="radio" name="Facebook" value=""><span class="modal__span other">Other</span><br>
+        </div>
+        <button onclick="loading()" id="send__modal" class="btn modal__btn">send</button>
+        <div class="modal__send_data">
+          <div class="loader"> <img src="./images/clock.svg" alt=""></div>
+          <p class="text__loading">Loading...</p>
+        </div>
+      </div>
+    
+    </div>
+
+    <script src="./js/Modal.js"></script>
+    <script src="./js/Timer.js"></script>
+    <script src="./js/Pricer.js"></script>
+
   </body>
 </html>
