@@ -271,13 +271,14 @@
       </div>
     </section>
 
-    <section class="mods">
+    <section id="mods" class="mods">
       <div class="mods__content container">
-        <p class="mods__title">Dark mode</p>
-        <p class="mods__subtitle">
+        <p id="mods__title" class="mods__title">Dark mode</p>
+        <p
+        id="mods__subtitle" class="mods__subtitle">
           Also available in <span class="mods__span">dark</span>.
         </p>
-        <p class="mods__descr">
+        <p id="mods__descr" class="mods__descr">
           Don't get blinded when using the H(app)y app at night, just turn off
           the lights. Lorem ipsum dolor sit amet.
         </p>
@@ -289,12 +290,12 @@
           />
         </div>
         <div class="mode__btns">
-          <button class="mode__btn">
-            <img src="./images/light.svg" alt="" />
+          <button id="lightMode" class="mode__btn">
+            <img class="lightMode" src="./images/light.svg" alt="" />
             <p>Light Mode</p>
           </button>
-          <button class="mode__btn">
-            <img src="./images/dark.svg" alt="" />
+          <button id="darkMode" class="mode__btn">
+            <img class="darkMode" src="./images/dark.svg" alt="" />
             <p>Dark mode</p>
           </button>
         </div>
@@ -446,6 +447,7 @@
     <script src="./js/Modal.js"></script>
     <script src="./js/Timer.js"></script>
     <script src="./js/Pricer.js"></script>
+    <script src="./js/Mods.js"></script>
 
   </body>
 </html>
