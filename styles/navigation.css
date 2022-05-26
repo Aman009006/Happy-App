@@ -19,12 +19,18 @@ nav {
   max-width: 590px;
   width: 100%;
 }
-.nav__li {
+.nav__li{
   list-style-type: none;
+}
+.nav__a{
+  margin: 0;
+}
+.nav__li a{
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #666666;
+  cursor: pointer;
 }
 
 .nav__btn {
@@ -36,4 +42,20 @@ nav {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.nav__ul{
+  display: flex;
+}
+@media only screen and (max-width: 840px) {
+ .nav__ul{
+   display: none;
+ }
+ .logo{
+   margin: 0;
+ }
+ nav{
+   padding: 15px;
+ }
+ 
 }

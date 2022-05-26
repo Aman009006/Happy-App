@@ -17,12 +17,15 @@
   color: #222222;
   margin-bottom: 42px;
 }
-.faq__texts {
+.faq__texts{
   display: flex;
   flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
 }
 .faq__text {
-  width: 576px;
+  max-width: 500px;
+  width: 100%;
   margin: 8px;
 }
 .faq__text-title {
@@ -37,4 +40,7 @@
   line-height: 24px;
   color: #222222;
   margin-top: 10px;
+}
+.faq__content{
+  padding: 10px;
 }

@@ -30,6 +30,7 @@
   line-height: 24px;
   text-align: center;
   color: #666666;
-  width: 589px;
+  max-width: 589px;
+  width: 100%;
   margin-bottom: 27px;
 }

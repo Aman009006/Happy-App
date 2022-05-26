@@ -3,13 +3,15 @@
   background: #222222;
 }
 .mode__img {
-  height: 486px;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   border-bottom: 1px solid white;
   display: flex;
 }
 .mode-img {
-  height: 486px;
+  max-height: 486px;
+  /* height: 100%; */
+  
 }
 .mods__content {
   padding-top: 100px;
@@ -38,13 +40,12 @@
   text-align: center;
   color: #ffffff;
   margin-top: 14px;
-  width: 578px;
 }
 .mode__img{
     margin-top: 36px;
 }
 .mods__span{
-    color: #FF9209;;
+    color: #FF9209 !important;
 }
 .mode__btn{
     margin: 0;
@@ -66,3 +67,55 @@
 #darkMode{
   color: #FF9209;
 }
+.mods.ligth__mode{
+  background: white;
+  color: #222222;
+}
+
+.mods.ligth__mode *{
+  color: #222222;
+}
+
+.ligth__mode #lightModeSvg{
+  fill: #FF9209;
+}
+.ligth__mode #darkModeSvg{
+  fill: #222;
+}
+.ligth__mode .light__btn{
+  color: #FF9209;
+}
+.light__title{
+  display: none;
+}
+.ligth__mode .dark__title{
+  display: none;
+}
+.ligth__mode .light__title{
+  display: block;
+}
+.mods__subtitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dark__title{
+  margin: 0 5px;
+}
+.light__title{
+  margin: 0 5px;
+}
+
+#lightModeSvg{
+  fill: #ffffff;
+}
+#darkModeSvg{
+  fill: #FF9209;
+}
+
+  @media only screen and (max-width: 740px) {
+    .mode-img{
+      width: 100%;
+    }
+     }
+   

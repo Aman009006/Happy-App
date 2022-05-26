@@ -40,3 +40,29 @@ color: #666666;
 .speed__right{
   height: 544px;
 }
+@media only screen and (max-width: 740px) {
+ .content__technology{
+   display: block;
+ }
+ .speed__technology{
+  display: block;
+}
+ .technology__right{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 15px;
+ }
+ .technology__title{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+ }
+ .technology__left{
+   max-width: 400px;
+   width: 100%;
+ }
+ .technology__descr{
+   margin-bottom: 15px;
+ }
+  }

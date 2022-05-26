@@ -1,6 +1,5 @@
 .analyzed {
   background: #ff5437;
-  height: 316px;
   padding: 80px;
   color: white;
 }
@@ -32,3 +31,28 @@
 
   color: #ffffff;
 }
+@media only screen and (max-width: 490px) {
+  .analyzed__content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+  .up__analyzed{
+    display: block;
+  }
+  .descr__analyzedd{
+    display: block;
+  }
+  .analyzed {
+    padding: 10px;
+  }
+  .descr__analyzed{
+    margin-bottom: 35px;
+  }
+ }
+ @media only screen and (max-width: 740px) {
+ .up__analyzed{
+   display: block;
+ }
+ }
+ 

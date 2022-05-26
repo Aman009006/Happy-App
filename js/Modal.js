@@ -17,7 +17,7 @@ window.onclick = function (event) {
 function Modal() {
   modal.style.display = "block";
   document.body.style.overflow = "hidden";
-  modal.style.overflow = "hidden";
+  // modal.style.overflow = "hidden";
 }
 
 function check() {
@@ -31,6 +31,7 @@ function check() {
   let bb = document.querySelector(
     '.radio__modal_pricer input[type="radio"]:checked'
   );
+
   if (bb.className === "modal__radio-btn pricer__input b") {
     blue.style.backgroundColor = "#0278ED";
     bspan.style.color = "white";
@@ -38,6 +39,7 @@ function check() {
     ospan.style.color = "#FF5437";
     yellow.style.backgroundColor = "white";
     yspan.style.color = "#FF9209";
+
   } else if (bb.className === "modal__radio-btn pricer__input o") {
     orange.style.backgroundColor = "#FF5437";
     ospan.style.color = "white";
@@ -45,6 +47,7 @@ function check() {
     yspan.style.color = "#FF9209";
     blue.style.backgroundColor = "white";
     bspan.style.color = "#0278ED";
+    
   } else if (bb.className === "modal__radio-btn  pricer__input y") {
     yellow.style.backgroundColor = "#FF9209";
     yspan.style.color = "white";
@@ -52,8 +55,10 @@ function check() {
     bspan.style.color = "#0278ED";
     orange.style.backgroundColor = "white";
     ospan.style.color = "#FF5437";
+    
   }
 }
+
 function closeModal(){
   modal.style.display = "none"
 }
@@ -62,24 +67,35 @@ function loading() {
   let firstRadio = document.querySelector(
     '.radio__modal_pricer input[type="radio"]:checked'
   );
-  let secondRadio = document.querySelector(
-    '.modal__radio-up input[type="radio"]:checked'
+  let secondRadio = document.querySelectorAll(
+    '.check___modal input[type="checkbox"]:checked'
   );
   let mailValue = document.getElementById("email").value;
   let passValue = document.getElementById("pass").value;
   let errorText = document.getElementById("error__value");
-  console.log(secondRadio);
+  if(mailValue.length < 3){
+    document.querySelector('.mail__helper').classList.add("error__input")
+  }else{
+    document.querySelector('.mail__helper').classList.remove("error__input")
+  }
+  if(passValue.length < 3){
+    document.querySelector('.pass__helper').classList.add("error__input")
+  }else{
+    document.querySelector('.pass__helper').classList.remove("error__input")
+  }
+  if(secondRadio.length <= 0){
+    document.querySelector('.check__helper').classList.add("error__input")
+  }else{
+    document.querySelector('.check__helper').classList.remove("error__input")
+  }
+  console.log(mailValue.length);
   if (
     firstRadio !== null &&
-    secondRadio !== null &&
-    mailValue > 3 &&
-    passValue > 3
+    secondRadio.length > 0 &&
+    mailValue.length > 3 &&
+    passValue.length > 3
   ) {
-    let loadingModal = document.querySelector(".modal__send_data");
-    loadingModal.classList.add("visable");
-    errorText.style.display = "none";
+    document.querySelector(".modal__send_data").classList.add("visable");
     setInterval(closeModal, 3000);
-  } else {
-    errorText.style.display = "block";
   }
 }

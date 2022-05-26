@@ -1,31 +1,45 @@
-const data = async () => {
-  const got = await fetch("config.json");
-  const obj = await got.json();
-  let date = new Date(`${obj.month} ${obj.day} ${obj.year} ${obj.time}`)
 
-  function Counts() {
-    let now = new Date();
-    gat = date - now;
-    let days = Math.floor(gat / 1000 / 60 / 60 / 24);
-    let hours = Math.floor(gat / 1000 / 60 / 60 ) %24;
-    let minut = Math.floor(gat / 1000 / 60 ) % 60;
-    let second = Math.floor(gat / 1000) %60;
-    document.getElementById("day").innerHTML = days
-    document.getElementById("hours").innerHTML = hours
-    document.getElementById("min").innerHTML = minut
-    document.getElementById("sec").innerHTML = second
+const getReportDate = async () => {
+const myJson = await fetch("config.json");
+  const config = await myJson.json();
 
-    if(days === 0 ){
-        if( hours === 0 ){
-            if( minut === 0 || second===0){
-                document.getElementById("timer").style.display = "none"
-            }
-        }
-    }else{
-        document.getElementById("timer").style.display = "block"
+  const endDate = config.timerEndDate.split(/\W/);
+  const [endDay, endMonth, endYear, endHour, endMinute] = endDate;
+
+  const countDownDate = new Date(
+    +endYear,
+    +endMonth - 1,
+    +endDay,
+    +endHour,
+    +endMinute
+  ).getTime();
+
+  const interval = setInterval(() => {
+    const now = new Date().getTime();
+
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    const dayTimer = (days >= 10 ? "" : "0") + days.toString();
+    const hoursTimer = (hours >= 10 ? "" : "0") + hours.toString();
+    const minutesTimer = (minutes >= 10 ? "" : "0") + minutes.toString();
+    const secondTimer = (seconds >= 10 ? "" : "0") + seconds.toString();
+
+    document.getElementById("day").innerHTML = dayTimer;
+    document.getElementById("hours").innerHTML = hoursTimer;
+    document.getElementById("min").innerHTML = minutesTimer;
+    document.getElementById("sec").innerHTML = secondTimer;
+
+    if (distance < 0) {
+      clearInterval(interval);
+      document.getElementById("timer").style.display = "none ";
     }
-  }
-  Counts();
-  setInterval(Counts,1000)
-};
-data();
+  }, 1000);
+}
+getReportDate()

@@ -1,7 +1,7 @@
 .features {
-  height: 1338px;
   background: #222222;
   margin-top: -7px;
+  padding-bottom: 20px;
 }
 .feature__name {
   font-weight: 400;
@@ -19,13 +19,15 @@
   line-height: 36px;
   text-align: center;
   color: #ffffff;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   margin-top: 5px;
 }
 .feature__cards {
   margin-top: 45px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .feature__card {
   background: #ffffff;
@@ -50,7 +52,8 @@
   height: 197px;
   position: absolute;
   bottom: 0;
-  width: 379px;
+  max-width: 379px;
+  width: 100%;
 }
 .feature__card-title {
   font-weight: 400;
@@ -90,4 +93,14 @@
   bottom: 167px;
   left: 0;
   right: 0;
+}
+@media only screen and (max-width: 490px) {
+ .feature__title{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 5px;
+ }
 }

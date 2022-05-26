@@ -27,8 +27,13 @@
   align-items: center;
   letter-spacing: 1.1px;
   text-transform: uppercase;
+  max-width: 729px;
+  ;
 
   color: #ffffff;
+}
+.data__number{
+  text-align: center;
 }
 .data__name {
   display: flex;
@@ -44,4 +49,13 @@
   text-align: center;
   letter-spacing: 1.5px;
   color: #ffffff;
+}
+.data__name-time{
+  font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+letter-spacing: 1.5px;
+color: #FFFFFF;
+text-transform:lowercase
 }
