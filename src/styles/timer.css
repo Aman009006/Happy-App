@@ -1,0 +1,153 @@
+.timer {
+  background-image: url(../images/bg_for_time.png);
+  height: 436px;
+  margin-top: 90px;
+}
+.timer__title {
+  text-align: center;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+  padding-top: 60px;
+}
+.timer__subtitle {
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+}
+.timer__numbers {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 150px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  max-width: 729px;
+  color: #ffffff;
+}
+.dataline {
+  margin-bottom: 20px;
+}
+.data__number {
+  text-align: center;
+}
+.data__name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 680px;
+}
+.data__name-time {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+}
+.data__name-time {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  text-transform: lowercase;
+}
+
+@media only screen and (max-width: 700px) {
+  .timer__numbers{
+    margin-top: 57px;
+  }
+  .timer__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
+  .timer__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+  .data__number {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+  #day {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+  }
+  #hours {
+    font-weight: 400;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+letter-spacing: 1.1px;
+text-transform: uppercase;
+  }
+  #min {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+  }
+  #sec {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+  }
+  .data__name-time{
+    font-weight: 700;
+font-size: 12px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 1.5px;
+  }
+  .dataline{
+    font-weight: 400;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+letter-spacing: 1.1px;
+text-transform: uppercase;
+  }
+}
