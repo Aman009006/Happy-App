@@ -20,7 +20,7 @@
        <a class="nav__a" href="/"> <img src="./images/logo.svg" alt="" class="logo" /></a>
         <ul class="nav__ul">
           <li class="nav__li"><a href="#features">Features</a></li>
-          <li class="nav__li"><a href="#pricing">Pricing</a></li>
+          <li class="nav__li"><a href="#price">Pricing</a></li>
           <li class="nav__li"><a href="#testimonials">Testimonials</a></li>
           <li class="nav__li"><a href="#faq">FAQ</a></li>
           <li class="nav__li">
@@ -32,7 +32,7 @@
               <a href="#"> <img src="./images/logo.svg" alt="" class="navbar__img-mobile"></a>
           </li>
           <li class="nav__li burger__li"><a href="#features">Features</a></li>
-          <li class="nav__li burger__li"><a href="#pricing">Pricing</a></li>
+          <li class="nav__li burger__li"><a href="#price">Pricing</a></li>
           <li class="nav__li burger__li"><a href="#testimonials">Testimonials</a></li>
           <li class="nav__li burger__li"><a href="#faq">FAQ</a></li>
           <li class="nav__li burger__li-btn">
@@ -89,7 +89,7 @@
             available in the App Store right now. Go check it out!
           </p>
           <div class="future__btns">
-            <button  id="myBtn" class="btn btn__modal future__btn">BUY NOW</button>
+            <button  id="myBtn" class="btn open__modal btn__modal future__btn">BUY NOW</button>
             <button class="btn future__btn">READ MORE</button>
           </div>
         </div>
@@ -322,36 +322,49 @@
       </div>
     </section>
 
-    <section id="pricing" class="pricing">
-      <div class="pricing__content container">
-        <h2 class="pricing__title">Pricing</h2>
-        <p class="pricing__descr">A plan for every need.</p>
-        <p class="pricing__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          scelerisque aliquam odio et faucibus.
-        </p>
-           <div class="pricing__cards">
-            <div class="pricing__card">
-              <p class="name__card">Standard</p>
-              <p id="standart" class="price__card">$</p>
-              <p class="time__card">Monthly</p>
-              <button  class="btn btn__modal buy__btn">BUY NOW</button>
+    <section id="price">
+      <div class="container block__price">
+          <div class="price__header">
+              <p class="price__header-text">Pricing</p>
+              <h1 class="price__header-title">A plan for every need.</h1>
+              <p class="price__header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                  scelerisque
+                  aliquam odio et faucibus.</p>
           </div>
-          <div class="pricing__card">
-            <p class="name__card orange">Premium</p>
-            <p id="premium" class="price__card orange">$9</p>
-            <p class="time__card">Monthly</p>
-            <button  class="btn btn__modal buy__btn orange__bg">BUY NOW</button>
-        </div>
-        <div class="pricing__card">
-          <p class="name__card yellow">Lifetime</p>
-          <p id="lifetime" class="price__card yellow">$9</p>
-          <p class="time__card ">Monthly</p>
-          <button  class="btn buy__btn btn__modal yellow__bg">BUY NOW</button>
+          <div class="price__sell">
+              <div class="sell__card">
+                  <div class="sell__card-block">
+                      <p class="sell__card-class text-blue" id="name__standart">
+                      </p>
+                      <p class="sell__card-sell text-blue" id="price__standart"></p>
+                  </div>
+                  <p class="sell__card-description">monthly</p>
+                  <button class="sell__card-button hover__button-blue open__modal" data-btn="standart">buy
+                      now</button>
+              </div>
+              <div class="sell__card">
+                  <div class="sell__card-block">
+                      <p class="sell__card-class text-orange" id="name__premium">
+                      </p>
+                      <p class="sell__card-sell text-orange" id="price__premium"></p>
+                  </div>
+                  <p class="sell__card-description">Annually</p>
+                  <button class="sell__card-button hover__button-orange open__modal" data-btn="premium">buy
+                      now</button>
+              </div>
+              <div class="sell__card">
+                  <div class="sell__card-block">
+                      <p class="sell__card-class text-limon" id="name__lifetime">
+                      </p>
+                      <p class="sell__card-sell text-limon" id="price__lifetime"></p>
+                  </div>
+                  <p class="sell__card-description">up front</p>
+                  <button class="sell__card-button hover_button-limon open__modal" data-btn="lifetime">buy
+                      now</button>
+              </div>
+          </div>
       </div>
-           </div>
-        </div>
-    </section>
+  </section>
 
     <section id="testimonials" class="testimonials">
       <div class="testimonials__content container">
@@ -426,55 +439,47 @@
     </footer>
 
     <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close"></span>
-        <p class="modal__title">Leave a request for the purchase of goods</p>
-        <div class="mail__helper">
-          <input id="email" type="text" placeholder="Email" class="modal__input-mail">
-        <p class="error">Fill in completely</p>
-        </div>
-        <div class="pass__helper">
-        <input id="pass" type="password" placeholder="Password" class="modal__input-password">
-        <p class="error">Fill in completely</p>
-        </div>        
-        <p class="modal__text-plan">Your plan?</p>
-        <label  onclick="check()" id="standert"  class="btn__card-modal  radio__modal_pricer b">
-          <input  class="modal__radio-btn pricer__input b" type="radio" name="Priceing" value=""><span id="bspan" class="modal__span span__input ">Standart</span><br>
-        </label >
-        <label onclick="check()" id="premiuum"  class="btn__card-modal orange orange__border radio__modal_pricer o">
-          <input  class="modal__radio-btn pricer__input o" type="radio" name="Priceing" value=""><span id="ospan" class="modal__span span__input orange">Premium</span><br>
-        </label >
-        <label onclick="check()" id="lifetiime"  class="btn__card-modal yellow yellow__border radio__modal_pricer y">
-          <input class="modal__radio-btn  pricer__input y" type="radio" name="Priceing" value=""><span id="yspan" class="modal__span span__input yellow">Lifetime</span><br>
-        </label >
-      <div class="check__helper">
-        <p class="modal__text-app">How did you know about our app?</p>
-        <label class="modal__radio-up check___modal">
-          <input class="modal__radio-btn checkbox__modal" type="checkbox" name="Facebook" value=""><span class="modal__span facebook">Facebook</span>
-        </label>
-        <label class="modal__radio-up check___modal">
-          <input class="modal__radio-btn checkbox__modal" type="checkbox" name="Facebook" value=""><span class="modal__span instagrem">Instagram</span><br>
-        </label>
-        <label class="modal__radio-up check___modal">
-          <input class="modal__radio-btn checkbox__modal" type="checkbox" name="Facebook" value=""><span class="modal__span youtube">Youtube</span><br>
-        </label>
-        <label class="modal__radio-up check___modal">
-          <input class="modal__radio-btn checkbox__modal" type="checkbox" name="Facebook" value=""><span class="modal__span other">Other</span><br>
-        </label>
-        <p class="error chech__err">Fill in completely</p>
-      </div>
-        <button  id="send__modal" class="btn modal__btn">send</button>
-        <div class="modal__send_data">
-          <div class="loader"> <img src="./images/clock.svg" alt=""></div>
-          <p class="text__loading">Loading...</p>
-        </div>
-        <div id="error__value" class="error__value">
-          <p class="error__text">Заполните полностью</p>
-        </div>
-      </div>
-    
-    </div>
-
+      <form class="modal-content js-form" action="" novalidate id="modal-content">
+          <p class="modal__title">Leave a request for the purchase of goods</p>
+          <div class="modal_input-block">
+              <input type="text" placeholder="name" class="modal__input-text js-input-name" name="text">
+              <span id="span__name"></span>
+          </div>
+          <div class="modal_input-block">
+              <input type="email" class="modal__input-text js-input-email" name="email" placeholder="email">
+              <span id="span__email"></span>
+          </div>
+          <p class="modal__plan">Your plan?</p>
+          <label for="standart" class="btn__card-modal text-blue btn-blue radio__modal_pricer">
+              <input id="standart" class="modal__radio-btn" type="radio" name="standart" value="Standart"><span
+                  class="modal__span standert"></span>
+          </label>
+          <label for="premium" class="btn__card-modal text-orange btn-orange radio__modal_pricer">
+              <input id="premium" class="modal__radio-btn" type="radio" name="standart" value="Premium"><span
+                  class="modal__span premium"></span>
+          </label>
+          <label for="lifetime" class="btn__card-modal text-limon btn-limon radio__modal_pricer">
+              <input id="lifetime" class="modal__radio-btn" type="radio" name="standart" value=Lifetime checked><span
+                  class="modal__span lifetime"></span>
+          </label>
+          <p class="modal__how">How did you know about our app?</p>
+          <div class="modal__checkbox">
+              <input type="checkbox" class="custom-checkbox" id="facebook" name="happy" value="facebook">
+              <label for="facebook">Facebook</label>
+              <input type="checkbox" class="custom-checkbox" id="instagram" name="happy" value="instagram">
+              <label for="instagram">Instagram</label>
+              <input type="checkbox" class="custom-checkbox" id="youtube" name="happy" value="youtube">
+              <label for="youtube">Youtube</label>
+              <input type="checkbox" class="custom-checkbox" id="other" name="happy" value="other">
+              <label for="other">Other</label>
+          </div>
+          <button class="modal__btn" type="submit" id="time-open">send</button>
+          <div class="modal-time" id="modal_time">
+              <img src="./images/clock.svg" alt="" class="time__img">
+              <span class="time__text">Loading...</span>
+          </div>
+      </form>
+  </div>
     
     <script type="module" src="./js/Main.js"></script>
 

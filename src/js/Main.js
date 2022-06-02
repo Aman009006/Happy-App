@@ -1,11 +1,17 @@
-import { getBurger } from "./burger.js";
-import { getModal } from "./Modal.js";
-import { getMods} from "./Mods.js"
-import {getPrice} from "./Pricer.js"
-import {getTimer} from "./Timer.js"
 import "../style.css"
+
+import { getBurger } from "./burger.js";
+import { renderModal } from "./Modal.js";
+import { getMods} from "./Mods.js"
+import {renderPrice} from "./Pricer.js"
+import {getTimer} from "./Timer.js"
+import {renderRadiobutton} from "./ModalText.js"
+import {renderValidator} from "./Validation.js"
+
 getTimer()
-getPrice()
+renderPrice()
 getMods()
-getModal()
+renderModal()
 getBurger()
+renderRadiobutton()
+renderValidator()

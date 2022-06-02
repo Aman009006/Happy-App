@@ -56,3 +56,64 @@ h3 {
 html {
   scroll-behavior: smooth;
 }
+
+.text-blue {
+    color: #0278ED;
+}
+
+.blue {
+    background: #0278ED;
+}
+
+.text-orange {
+    color: #FF5437;
+}
+
+.orangee {
+    background: #FF5437;
+}
+
+.text-limon {
+    color: #FF9209;
+}
+
+.limon {
+    background: #FF9209;
+}
+
+.text-violet {
+    color: #B25DF8;
+}
+
+.violete {
+    background: #B25DF8;
+}
+
+.text-sky {
+    color: #00C6DF;
+}
+
+.skye {
+    background: #00C6DF;
+}
+
+.text-pink {
+    color: #E738CE;
+}
+
+.pinke {
+    background: #E738CE;
+}
+
+.btn-blue {
+    color: #0278ED;
+}
+
+.btn-orange {
+    border: 1px solid #FF5437;
+}
+
+.btn-limon {
+
+    border: 1px solid #FF9209;
+}

@@ -1,17 +1,15 @@
-export const getPrice = () =>{
+export const renderPrice = () => {
   const getPrice = async () => {
-    try {
-      const myJson = await fetch("config.json");
-      const data = await myJson.json();
-      console.log(data.plans[0].price);
-    
-      document.getElementById("standart").textContent = `$${data.plans[0].price}`
-      document.getElementById("premium").textContent = `$${data.plans[1].price}`
-      document.getElementById("lifetime").textContent = `$${data.plans[2].price}`
-    } catch (err) {
-      return 0;
-    }
+      const got = await fetch("../../config.json");
+      const config = await got.json();
+      let price__standart = config.plans
+
+      document.getElementById('name__standart').textContent = price__standart[0].name
+      document.getElementById('price__standart').textContent = ("$" + price__standart[0].price)
+      document.getElementById('name__premium').textContent = price__standart[1].name
+      document.getElementById('price__premium').textContent = ("$" + price__standart[1].price)
+      document.getElementById('name__lifetime').textContent = price__standart[2].name
+      document.getElementById('price__lifetime').textContent = ("$" + price__standart[2].price)
   };
-    
-    getPrice();
+  getPrice();
 }
