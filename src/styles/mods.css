@@ -11,7 +11,6 @@
 .mode-img {
   max-height: 486px;
   /* height: 100%; */
-  
 }
 .mods__content {
   padding-top: 100px;
@@ -42,81 +41,87 @@
   margin-top: 14px;
   width: 578px;
 }
-.mode__img{
-    margin-top: 36px;
+.mode__img {
+  margin-top: 36px;
 }
-.mods__span{
-    color: #FF9209 !important;
+.mods__span {
+  color: #ff9209 !important;
 }
-.mode__btn{
-    margin: 0;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    
+.mode__btn {
+  margin: 0;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
-.mode__btn:first-child{
-    margin-right: 40px;
+.mode__btn:first-child {
+  margin-right: 40px;
 }
-.mode__btns{
-    margin-top: 41px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#darkMode{
-  color: #FF9209;
-}
-.mods.ligth__mode{
-  background: white;
-  color: #222222;
-}
-
-.mods.ligth__mode *{
-  color: #222222;
-}
-
-.ligth__mode #lightModeSvg{
-  fill: #FF9209;
-}
-.ligth__mode #darkModeSvg{
-  fill: #222;
-}
-.ligth__mode .light__btn{
-  color: #FF9209;
-}
-.light__title{
-  display: none;
-}
-.ligth__mode .dark__title{
-  display: none;
-}
-.ligth__mode .light__title{
-  display: block;
-}
-.mods__subtitle{
+.mode__btns {
+  margin-top: 41px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.dark__title{
+.ml15 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#darkMode {
+  color: #ff9209;
+}
+.mods.ligth__mode {
+  background: white;
+  color: #222222;
+}
+
+.mods.ligth__mode * {
+  color: #222222;
+}
+
+.ligth__mode #lightModeSvg {
+  fill: #ff9209;
+}
+.ligth__mode #darkModeSvg {
+  fill: #222;
+}
+.ligth__mode .light__btn {
+  color: #ff9209;
+}
+.light__title {
+  display: none;
+}
+.ligth__mode .dark__title {
+  display: none;
+}
+.ligth__mode .light__title {
+  display: block;
+}
+.mods__subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dark__title {
   margin: 0 5px;
 }
-.light__title{
+.light__title {
   margin: 0 5px;
 }
 
-#lightModeSvg{
+#lightModeSvg {
   fill: #ffffff;
 }
-#darkModeSvg{
-  fill: #FF9209;
+#darkModeSvg {
+  fill: #ff9209;
 }
 
-  @media only screen and (max-width: 740px) {
-    .mode-img{
-      width: 100%;
-    }
-     }
-   
+@media only screen and (max-width: 740px) {
+  .mode-img {
+    width: 100%;
+  }
+}
