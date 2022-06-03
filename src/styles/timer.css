@@ -1,5 +1,6 @@
 .timer {
   background-image: url(../images/bg_for_time.png);
+  background-size: cover;
   height: 436px;
   margin-top: 90px;
 }

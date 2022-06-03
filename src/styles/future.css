@@ -10,19 +10,19 @@
   margin: 5px;
 }
 .future__content {
-  padding-top: 100px;
+  padding-top: 87px;
   display: flex;
 }
 .future__left {
   max-width: 400px;
   width: 100%;
+  margin-top: 53px;
 }
 .future__title {
   font-weight: 400;
   font-size: 54px;
   line-height: 60px;
   color: #222222;
-  margin-top: 24px;
 }
 .future__descr {
   font-weight: 400;
