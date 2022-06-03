@@ -63,8 +63,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  margin-right: 15px;
-  margin-top: 15px;
+  margin: 10px;
 }
 
 
@@ -96,6 +95,7 @@
   text-transform: uppercase;
   color: #222222;
   margin-bottom: 20px;
+  margin-top: 25px;
 }
 
 .sell__card-button {

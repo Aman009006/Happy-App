@@ -69,7 +69,6 @@ export const renderValidator = () => {
       document.querySelector(".js-input-name").value = "";
       document.getElementById("modal_time").style.display = "none";
       document.getElementById("modal-content").style.height = "815px";
-      console.log(activeCheck.length);
       console.log(getDataConsoleLog);
     }
     if(activeCheck.length >= 0){
