@@ -44,11 +44,15 @@
 .price__sell {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .sell__card {
+  margin: 0;
   height: 338px;
-  width: 379px;
+  max-width: 379px;
+  width: 100%;
   background: #f2f2f2;
   border-radius: 20px;
   display: flex;
@@ -60,11 +64,9 @@
   font-style: normal;
   font-weight: 400;
   margin-right: 15px;
+  margin-top: 15px;
 }
 
-.sell__card:nth-child(3) {
-  margin-right: 0;
-}
 
 .sell__card-block {
   position: relative;
@@ -153,13 +155,12 @@
 }
 
 @media (max-width: 788px) {
-  .sell__card:nth-child(2) {
-    margin-top: 15px;
-  }
+  
 
   .sell__card {
     margin: 0px;
     margin-right: 0;
+    margin-top: 15px;
   }
 }
 
@@ -170,9 +171,12 @@
 }
 @media (max-width: 410px) {
   .sell__card {
+    margin: 0;
     width: 100%;
     margin-right: 10px;
     margin-left: 10px;
+    margin-top: 15px;
+
   }
   .sell__card:nth-child(3) {
     margin-right: 10px;

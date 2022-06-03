@@ -59,5 +59,8 @@ module.exports = {
             new CssMinimizerWebpackPlugin(),
             "..."
         ]
-    }
+    },
+    performance : {
+        hints : false
+    }   
 }

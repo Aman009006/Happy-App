@@ -85,7 +85,8 @@
   text-align: center;
   color: #222222;
   margin-top: 11px;
-  width: 286px;
+  max-width: 286px;
+  width: 100%;
 
 }
 .feature__img-logo {

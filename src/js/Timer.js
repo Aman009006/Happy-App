@@ -38,10 +38,10 @@ export const getTimer = () => {
       const minutesTimer = (minutes >= 10 ? "" : "0") + minutes.toString();
       const secondTimer = (seconds >= 10 ? "" : "0") + seconds.toString();
 
-      document.getElementById("day").innerHTML = dayTimer;
-      document.getElementById("hours").innerHTML = hoursTimer;
-      document.getElementById("min").innerHTML = minutesTimer;
-      document.getElementById("sec").innerHTML = secondTimer;
+      document.getElementById("day").textContent = dayTimer;
+      document.getElementById("hours").textContent = hoursTimer;
+      document.getElementById("min").textContent = minutesTimer;
+      document.getElementById("sec").textContent = secondTimer;
 
       
 

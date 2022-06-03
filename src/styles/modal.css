@@ -29,7 +29,17 @@
   padding: 38px 0 56px 0;
   z-index: 155;
 }
-
+#closeModal{
+  background: none;
+  border: none;
+  position: absolute;
+  top: 27px;
+  right: 29px;
+  cursor: pointer;
+}
+.modal-content{
+  position: relative;
+}
 
 .modal__title {
   font-size: 20px;
@@ -134,10 +144,14 @@
   min-height: 42px;
   color: rgb(255, 255, 255);
 }
-
-.btn__card-modal:nth-child(3n + 1) {
-  margin-bottom: 42px;
+#check__err{
+  color: red;
+  display: none;
 }
+.error__input{
+  background: #FFEEEE;
+}
+
 
 .radio__modal_pricer {
   justify-content: space-between;

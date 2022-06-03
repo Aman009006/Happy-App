@@ -47,6 +47,20 @@ h3 {
   font-size: 14px;
   line-height: 18px;
 }
+.nav__btna{
+  width: 172px !important;
+  background: #222222;
+  border-radius: 4px;
+  padding: 10px 31px !important;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 .btn:hover{
   background: #4E4E4E;
 }

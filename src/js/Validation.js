@@ -39,6 +39,9 @@ export const renderValidator = () => {
 
     if (!validateEmail(inputEmail.value)) {
       document.getElementById("span__email").textContent = "email not valid";
+        inputEmail.classList.toggle('error__input')
+        inputName.classList.toggle('error__input')
+
       return false;
     } else {
       document.getElementById("span__email").textContent = "";
@@ -66,9 +69,13 @@ export const renderValidator = () => {
       document.querySelector(".js-input-name").value = "";
       document.getElementById("modal_time").style.display = "none";
       document.getElementById("modal-content").style.height = "815px";
-      console.log(inputEmail.value);
+      console.log(activeCheck.length);
       console.log(getDataConsoleLog);
     }
+    if(activeCheck.length >= 0){
+      document.getElementById("check__err").style.display = "block"
+    }
+   
     if (
       activeRadio !== null &&
       activeCheck.length > 0 &&

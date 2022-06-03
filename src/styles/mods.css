@@ -39,7 +39,8 @@
   text-align: center;
   color: #ffffff;
   margin-top: 14px;
-  width: 578px;
+  max-width: 578px;
+  width: 100%;
 }
 .mode__img {
   margin-top: 36px;
@@ -122,6 +123,7 @@
 
 @media only screen and (max-width: 740px) {
   .mode-img {
+    max-width: 300px;
     width: 100%;
   }
 }

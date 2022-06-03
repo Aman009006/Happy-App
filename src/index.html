@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    
+    <link rel="stylesheet" href="./style.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/features.css" />
     <title>Happy app</title>
   </head>
   <body>
@@ -24,7 +22,7 @@
           <li class="nav__li"><a href="#testimonials">Testimonials</a></li>
           <li class="nav__li"><a href="#faq">FAQ</a></li>
           <li class="nav__li">
-            <button class="nav__li nav__btn btn">Get this app</button>
+            <a href="#download" class=" nav__btna">Get this app</a>
           </li>
         </ul>
         <ul class="navbar__ul">
@@ -36,7 +34,7 @@
           <li class="nav__li burger__li"><a href="#testimonials">Testimonials</a></li>
           <li class="nav__li burger__li"><a href="#faq">FAQ</a></li>
           <li class="nav__li burger__li-btn">
-            <button class="nav__li nav__btn btn">Get this app</button>
+           <a  class="burger__li   nav__btna" href="#download">Get this app</a>
           </li>
       </ul>
       <div class="burgerMenu">
@@ -398,7 +396,7 @@
         <h2 class="download__title">Download</h2>
         <p class="download__descr">It's available right now!</p>
         <p class="download__subtitle">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
-        <img src="./images/downlogo.svg" alt="" class="download__appStor">
+        <a href="https://www.notion.so/New-PAGE-f6ff3886027d44b2b67091e0bac037f3" target="_blank"><img src="./images/downlogo.svg" alt="" class="download__appStor"></a>
       </div>
     </section>
 
@@ -440,6 +438,7 @@
 
     <div id="myModal" class="modal">
       <form class="modal-content js-form" action="" novalidate id="modal-content">
+        <button id="closeModal"><img src="./images/closeBtn.svg" alt=""></button>
           <p class="modal__title">Leave a request for the purchase of goods</p>
           <div class="modal_input-block">
               <input type="text" placeholder="name" class="modal__input-text js-input-name" name="text">
@@ -472,7 +471,8 @@
               <label for="youtube">Youtube</label>
               <input type="checkbox" class="custom-checkbox" id="other" name="happy" value="other">
               <label for="other">Other</label>
-          </div>
+            <span id="check__err" >choose one pls</span>
+            </div>
           <button class="modal__btn" type="submit" id="time-open">send</button>
           <div class="modal-time" id="modal_time">
               <img src="./images/clock.svg" alt="" class="time__img">

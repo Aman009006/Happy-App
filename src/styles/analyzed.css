@@ -34,7 +34,7 @@
 }
 @media only screen and (max-width: 490px) {
   .analyzed__content{
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: space-between;
   }
